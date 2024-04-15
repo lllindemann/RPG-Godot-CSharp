@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://d3lrhtwufh8o0"]
 
 [node name="Main" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+layer_0/name = "1"
+layer_0/z_index = -2
+layer_1/name = "2"
+layer_1/z_index = -1
+layer_1/tile_data = PackedInt32Array()
+layer_2/name = "3"
+layer_2/tile_data = PackedInt32Array()
