@@ -2147,7 +2147,7 @@ position = Vector2(1.00001, -1)
 scale = Vector2(0.184896, 0.195313)
 sprite_frames = SubResource("SpriteFrames_f0g6v")
 animation = &"walk"
-frame_progress = 0.648588
+frame_progress = 0.876277
 
 [node name="Camera2D" type="Camera2D" parent="TileMap/Player"]
 zoom = Vector2(5, 5)
