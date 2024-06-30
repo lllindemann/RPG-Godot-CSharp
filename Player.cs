@@ -13,22 +13,34 @@ public partial class Player : CharacterBody2D
 	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
 
-	 public override void _Ready()
+	public override void _Ready()
 	{
 		_animatedSprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 		_animatedSprite.Play("idle");
 	}
-	
+
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector2 velocity = Velocity;
+		if (velocity.X < 0)
+		{
+			_animatedSprite.FlipH = true;
+		}
+		else
+		{
+			if (velocity.X > 0)
+			{
+				_animatedSprite.FlipH = false;
+			}
+		}
+
 
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
 		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
 		if (direction != Vector2.Zero)
 		{
-			velocity= direction * Speed;
+			velocity = direction * Speed;
 			_animatedSprite.Play("walk");
 		}
 		else
