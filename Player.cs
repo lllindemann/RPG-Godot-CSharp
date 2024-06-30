@@ -29,11 +29,12 @@ public partial class Player : CharacterBody2D
 		if (direction != Vector2.Zero)
 		{
 			velocity= direction * Speed;
-				_animatedSprite.Play("walk");
+			_animatedSprite.Play("walk");
 		}
 		else
 		{
 			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+			velocity.Y = Mathf.MoveToward(Velocity.Y, 0, Speed);
 			_animatedSprite.Play("idle");
 		}
 

@@ -2143,11 +2143,11 @@ layer_2/tile_data = PackedInt32Array()
 script = ExtResource("2_r16g3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TileMap/Player"]
-position = Vector2(1.00001, -1)
+position = Vector2(38, 5)
 scale = Vector2(0.184896, 0.195313)
 sprite_frames = SubResource("SpriteFrames_f0g6v")
-animation = &"walk"
-frame_progress = 0.876277
+animation = &"idle"
+frame_progress = 0.981956
 
 [node name="Camera2D" type="Camera2D" parent="TileMap/Player"]
 zoom = Vector2(5, 5)
