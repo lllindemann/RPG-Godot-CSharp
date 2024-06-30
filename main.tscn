@@ -2405,28 +2405,34 @@ layer_2/tile_data = PackedInt32Array()
 
 [node name="Stone" type="AnimatedSprite2D" parent="TileMap"]
 process_mode = 3
-position = Vector2(914, 14)
+position = Vector2(897, -3)
 scale = Vector2(0.0937505, 0.0937505)
 sprite_frames = SubResource("SpriteFrames_wx58w")
-frame_progress = 0.25414
+autoplay = "default"
+frame_progress = 0.0902376
 
 [node name="Stone2" type="AnimatedSprite2D" parent="TileMap"]
-position = Vector2(918, 12)
+position = Vector2(903, -1)
 scale = Vector2(0.0898436, 0.0898436)
 sprite_frames = SubResource("SpriteFrames_88xck")
-frame_progress = 0.896089
+autoplay = "default"
+frame_progress = 0.793907
 
 [node name="Stone3" type="AnimatedSprite2D" parent="TileMap"]
-position = Vector2(901, -4)
+process_mode = 3
+position = Vector2(898, -1)
 scale = Vector2(0.101563, 0.101563)
 sprite_frames = SubResource("SpriteFrames_ns4pd")
-frame_progress = 0.822859
+autoplay = "default"
+frame_progress = 0.24583
 
 [node name="Stone4" type="AnimatedSprite2D" parent="TileMap"]
-position = Vector2(907, -8)
+process_mode = 3
+position = Vector2(899, -11)
 scale = Vector2(0.09375, 0.09375)
 sprite_frames = SubResource("SpriteFrames_kmb42")
-frame_progress = 0.387217
+autoplay = "default"
+frame_progress = 0.961428
 
 [node name="Player" type="CharacterBody2D" parent="."]
 script = ExtResource("2_r16g3")
@@ -2436,6 +2442,7 @@ position = Vector2(38, 5)
 scale = Vector2(0.184896, 0.195313)
 sprite_frames = SubResource("SpriteFrames_f0g6v")
 animation = &"idle"
+autoplay = "idle"
 frame_progress = 0.455519
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
